@@ -1,5 +1,7 @@
-import FileHandling.FileReader;
-import FileHandling.FileWriter;
+package root;
+
+import root.FileHandling.FileReader;
+import root.FileHandling.FileWriter;
 
 import java.util.List;
 
