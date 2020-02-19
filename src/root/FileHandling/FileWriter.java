@@ -25,6 +25,7 @@ public class FileWriter {
             }
 
             writer.println(stringBuilder.toString());
+            System.out.println(stringBuilder.toString());
 
             writer.close();
         } catch (Exception e) {
