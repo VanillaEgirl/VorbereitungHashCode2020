@@ -1,5 +1,7 @@
 package root.FileHandling;
 
+import root.Pizza;
+
 import java.io.BufferedReader;
 import java.util.ArrayList;
 import java.util.List;
@@ -26,9 +28,10 @@ public class FileReader {
             line = reader.readLine();
             parts = line.split("\\s+");
 
-            for (String part : parts) {
+            for (int i = 0; i < parts.length; i++) {
+                String part = parts[i];
                 int number = Integer.parseInt(part);
-                inputDTO.numberSlices.add(number);
+                inputDTO.pizzas.add(new Pizza(i, number));
             }
 
             /*while ((line = reader.readLine()) != null) {
