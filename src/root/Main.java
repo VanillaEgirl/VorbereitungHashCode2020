@@ -2,12 +2,12 @@ package root;
 
 import root.FileHandling.FileReader;
 import root.FileHandling.FileWriter;
+import root.FileHandling.InputDTO;
 
 import java.util.List;
 
 public class Main {
     public static void main(String[] args) {
-        List<String> strings = FileReader.readFile();
-        FileWriter.writeFile(strings);
+        InputDTO input = FileReader.readFile();
     }
 }
